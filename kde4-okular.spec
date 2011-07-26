@@ -24,6 +24,7 @@ BuildRequires:	poppler-Qt-devel
 BuildRequires:	poppler-Qt-devel
 BuildRequires:	qca-devel >= 2.0.0
 BuildRequires:	qimageblitz-devel >= 0.0.6
+Obsoletes:	kde4-kdegraphics-okular
 Obsoletes:	kio_msits
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
