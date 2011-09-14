@@ -1,12 +1,12 @@
 %define		_state		stable
 %define		orgname		okular
-%define		qtver		4.7.3
+%define		qtver		4.7.4
 
 Summary:	K Desktop Environment - KDE universal document viewer
 Summary(pl.UTF-8):	K Desktop Environment - Uniwersalna przeglądarka dokumentów dla KDE
 Name:		okular
 Version:	4.7.1
-Release:	2
+Release:	3
 License:	GPL
 Group:		X11/Applications/Graphics
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.bz2
@@ -25,8 +25,8 @@ BuildRequires:	poppler-Qt-devel
 BuildRequires:	poppler-Qt-devel
 BuildRequires:	qca-devel >= 2.0.0
 BuildRequires:	qimageblitz-devel >= 0.0.6
-Obsoletes:	kde4-kdegraphics-okular
-Obsoletes:	kio_msits
+Obsoletes:	kde4-kdegraphics-okular < 4.6.99
+Obsoletes:	kio_msits < 4.6.99
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -40,6 +40,7 @@ Summary:	okular development files
 Summary(pl.UTF-8):	Pliki dla programistów okular
 Group:		X11/Development/Libraries
 Requires:	%{name} = %{version}-%{release}
+Obsoletes:	kde4-kdegraphics-devel < 4.6.99
 
 %description devel
 okular development files.
