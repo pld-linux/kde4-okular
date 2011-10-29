@@ -5,12 +5,12 @@
 Summary:	K Desktop Environment - KDE universal document viewer
 Summary(pl.UTF-8):	K Desktop Environment - Uniwersalna przeglądarka dokumentów dla KDE
 Name:		okular
-Version:	4.7.2
+Version:	4.7.3
 Release:	1
 License:	GPL
 Group:		X11/Applications/Graphics
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.bz2
-# Source0-md5:	6d61d0306243f917d8b29e9183a67d39
+# Source0-md5:	68d4f59a5c7e8bfd77413e7e412e2dae
 URL:		http://www.kde.org/
 BuildRequires:	chmlib-devel
 BuildRequires:	djvulibre-devel
