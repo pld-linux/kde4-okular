@@ -6,7 +6,7 @@ Summary:	K Desktop Environment - KDE universal document viewer
 Summary(pl.UTF-8):	K Desktop Environment - Uniwersalna przeglądarka dokumentów dla KDE
 Name:		kde4-okular
 Version:	4.8.0
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications/Graphics
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.bz2
@@ -27,9 +27,9 @@ BuildRequires:	qca-devel >= 2.0.0
 BuildRequires:	qimageblitz-devel >= 0.0.6
 Obsoletes:	kde4-kdegraphics-okular < 4.6.99
 Obsoletes:	kio_msits < 4.6.99
-Obsoletes:	okular < 4.8.0
+Obsoletes:	okular <= 4.8.0
 Suggests:	/usr/bin/lpr
-Suggests:	mobipocket
+Suggests:	kde4-kdegraphics-mobipocket
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
