@@ -9,7 +9,7 @@ Version:	4.8.1
 Release:	1
 License:	GPL
 Group:		X11/Applications/Graphics
-Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/xz/%{orgname}-%{version}.tar.xz
+Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.xz
 # Source0-md5:	7e21d10d1631e9c72c25b3ac58c31edb
 URL:		http://www.kde.org/
 BuildRequires:	chmlib-devel
