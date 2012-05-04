@@ -14,6 +14,7 @@ Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version
 URL:		http://www.kde.org/
 BuildRequires:	chmlib-devel
 BuildRequires:	djvulibre-devel
+BuildRequires:	docbook-dtd42-xml
 BuildRequires:	ebook-tools-devel
 BuildRequires:	exiv2-devel >= 0.18.2
 BuildRequires:	lcms-devel
