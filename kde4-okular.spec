@@ -91,7 +91,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/kde4/services/msits.protocol
 %{_datadir}/kde4/servicetypes/okular*.desktop
 %{_desktopdir}/kde4/okular*.desktop
-%{_iconsdir}/hicolor/*/apps/okular.png
+%{_iconsdir}/hicolor/*/apps/okular.*
 %{_kdedocdir}/en/okular
 
 %files devel
