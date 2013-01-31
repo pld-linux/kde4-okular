@@ -5,12 +5,12 @@
 Summary:	K Desktop Environment - KDE universal document viewer
 Summary(pl.UTF-8):	K Desktop Environment - Uniwersalna przeglądarka dokumentów dla KDE
 Name:		kde4-okular
-Version:	4.9.5
+Version:	4.10.0
 Release:	1
 License:	GPL
 Group:		X11/Applications/Graphics
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.xz
-# Source0-md5:	c95ada3fb597a6f3e727b4bbe92de087
+# Source0-md5:	d80826be92b2dab298959eeae0738a1b
 URL:		http://www.kde.org/
 BuildRequires:	chmlib-devel
 BuildRequires:	djvulibre-devel
@@ -83,16 +83,21 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %ghost %{_libdir}/libokularcore.so.?
 %attr(755,root,root) %{_libdir}/kde4/okular*.so
 %attr(755,root,root) %{_libdir}/kde4/kio_msits.so
+%dir %{_libdir}/kde4/imports/org/kde/okular
+%attr(755,root,root) %{_libdir}/kde4/imports/org/kde/okular/libokularplugin.so
+%{_datadir}/apps/kconf_update/okular.upd
 %{_datadir}/apps/okular
-%{_datadir}/config.kcfg/okular.kcfg
 %{_datadir}/config.kcfg/gssettings.kcfg
-%{_datadir}/kde4/services/okular*.desktop
+%{_datadir}/config.kcfg/okular_core.kcfg
+%{_datadir}/config.kcfg/okular.kcfg
 %{_datadir}/kde4/services/libokular*.desktop
 %{_datadir}/kde4/services/msits.protocol
+%{_datadir}/kde4/services/okular*.desktop
 %{_datadir}/kde4/servicetypes/okular*.desktop
 %{_desktopdir}/kde4/okular*.desktop
 %{_iconsdir}/hicolor/*/apps/okular.*
 %{_kdedocdir}/en/okular
+%{_mandir}/man1/okular.1*
 
 %files devel
 %defattr(644,root,root,755)
