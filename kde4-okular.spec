@@ -5,12 +5,12 @@
 Summary:	K Desktop Environment - KDE universal document viewer
 Summary(pl.UTF-8):	K Desktop Environment - Uniwersalna przeglądarka dokumentów dla KDE
 Name:		kde4-okular
-Version:	4.10.5
+Version:	4.11.0
 Release:	1
 License:	GPL
 Group:		X11/Applications/Graphics
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.xz
-# Source0-md5:	21aa591270d5b4cac297e00fff91efb7
+# Source0-md5:	af0bdfa2670e7e4494dafcb562886bf2
 URL:		http://www.kde.org/
 BuildRequires:	chmlib-devel
 BuildRequires:	djvulibre-devel
@@ -26,11 +26,11 @@ BuildRequires:	poppler-Qt-devel
 BuildRequires:	poppler-Qt-devel
 BuildRequires:	qca-devel >= 2.0.0
 BuildRequires:	qimageblitz-devel >= 0.0.6
+Suggests:	/usr/bin/lpr
+Suggests:	kde4-kdegraphics-mobipocket
 Obsoletes:	kde4-kdegraphics-okular < 4.6.99
 Obsoletes:	kio_msits < 4.6.99
 Obsoletes:	okular <= 4.8.0
-Suggests:	/usr/bin/lpr
-Suggests:	kde4-kdegraphics-mobipocket
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -94,6 +94,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/kde4/services/msits.protocol
 %{_datadir}/kde4/services/okular*.desktop
 %{_datadir}/kde4/servicetypes/okular*.desktop
+%{_desktopdir}/kde4/active-documentviewer_*.desktop
+%{_datadir}/config.kcfg/pdfsettings.kcfg
 %{_desktopdir}/kde4/okular*.desktop
 %{_iconsdir}/hicolor/*/apps/okular.*
 %{_kdedocdir}/en/okular
