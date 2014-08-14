@@ -5,12 +5,12 @@
 Summary:	K Desktop Environment - KDE universal document viewer
 Summary(pl.UTF-8):	K Desktop Environment - Uniwersalna przeglądarka dokumentów dla KDE
 Name:		kde4-okular
-Version:	4.13.2
+Version:	4.14.0
 Release:	1
 License:	GPL
 Group:		X11/Applications/Graphics
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.xz
-# Source0-md5:	13619beb617d1207da2c0f8af8da0b30
+# Source0-md5:	5debba1b609a8beb66937150203f64c3
 URL:		http://www.kde.org/
 BuildRequires:	chmlib-devel
 BuildRequires:	djvulibre-devel
