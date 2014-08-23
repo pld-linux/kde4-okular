@@ -9,7 +9,7 @@ Version:	4.14.0
 Release:	1
 License:	GPL
 Group:		X11/Applications/Graphics
-Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.xz
+Source0:	http://download.kde.org/%{_state}/%{version}/src/%{orgname}-%{version}.tar.xz
 # Source0-md5:	5debba1b609a8beb66937150203f64c3
 URL:		http://www.kde.org/
 BuildRequires:	chmlib-devel
