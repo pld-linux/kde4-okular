@@ -20,7 +20,7 @@ BuildRequires:	exiv2-devel >= 0.18.2
 BuildRequires:	kde4-libkscreen
 BuildRequires:	lcms-devel
 BuildRequires:	libgphoto2-devel
-BuildRequires:	libjpeg-devel
+BuildRequires:	libjpeg-turbo-devel
 BuildRequires:	libpng-devel >= 1.0.8
 BuildRequires:	libspectre-devel >= 0.2.2
 BuildRequires:	poppler-Qt-devel
